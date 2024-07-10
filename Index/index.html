@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agroeste Consultoria Agronômica</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .logo-container {
+            display: flex;
+            align-items: center;
+        }
+        .logo {
+            width: 80px;
+            height: 80px;
+            background-color: #fff;
+            margin-right: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            color: #4CAF50;
+        }
+        .company-info {
+            flex-grow: 1;
+        }
+        .company-info h1 {
+            margin: 0;
+            font-size: 1.8em;
+        }
+        .company-info p {
+            margin: 5px 0 0;
+            font-size: 1em;
+        }
+        nav {
+            background-color: #333;
+            color: white;
+            padding: 0.5rem;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        nav ul li {
+            margin: 5px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+            background-color: #4CAF50;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        nav ul li a:hover {
+            background-color: #45a049;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            padding: 20px;
+        }
+        .service, .team-member {
+            background: #f4f4f4;
+            margin-bottom: 20px;
+            padding: 20px;
+            border-radius: 5px;
+        }
+        .team-member {
+            display: flex;
+            align-items: center;
+        }
+        .team-member img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-right: 20px;
+            object-fit: cover;
+        }
+        .member-info {
+            flex: 1;
+        }
+        .member-info h3 {
+            margin-top: 0;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 20px;
+        }
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                text-align: center;
+            }
+            .logo-container {
+                margin-bottom: 10px;
+            }
+            .logo {
+                margin-right: 0;
+                margin-bottom: 10px;
+            }
+            .team-member {
+                flex-direction: column;
+                text-align: center;
+            }
+            .team-member img {
+                margin-right: 0;
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="C:\Agroeste\index\imagen1.png" alt="Agroeste Logo" class="logo">
+            <div class="company-info">
+                <h1>Agroeste</h1>
+                <p>Consultoria Agronômica</p>
+            </div>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#servicos">Serviços</a></li>
+            <li><a href="#equipe">Nossa Equipe</a></li>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#contato">Contato</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <section id="home">
+            <h2>Bem-vindo à Agroeste Consultoria Agronômica</h2>
+            <p>Oferecemos soluções especializadas para otimizar sua produção agrícola e pecuária.</p>
+            <img src="/api/placeholder/800/400" alt="Campo agrícola" style="width:100%;max-width:800px;">
+        </section>
+
+        <section id="servicos">
+            <h2>Nossos Serviços</h2>
+            <div class="service">
+                <h3>Manejo de Bovinos</h3>
+                <p>Oferecemos consultoria especializada em manejo de bovinos, incluindo nutrição, reprodução, saúde e bem-estar animal. Nossos especialistas ajudam a otimizar a produção de leite e carne, garantindo a sustentabilidade do seu negócio.</p>
+                <img src="/api/placeholder/400/200" alt="Manejo de bovinos" style="width:100%;max-width:400px;">
+            </div>
+            <div class="service">
+                <h3>Manejo de Caprinos</h3>
+                <p>Nossa equipe fornece orientação completa para o manejo eficiente de caprinos, abrangendo aspectos como alimentação, cuidados sanitários, melhoramento genético e produção de leite e carne caprina de alta qualidade.</p>
+                <img src="/api/placeholder/400/200" alt="Manejo de caprinos" style="width:100%;max-width:400px;">
+            </div>
+            <div class="service">
+                <h3>Manejo de Suínos</h3>
+                <p>Desenvolvemos estratégias personalizadas para o manejo de suínos, focando em práticas modernas de criação, nutrição balanceada, controle sanitário e gestão reprodutiva. Nosso objetivo é maximizar a eficiência da sua produção suinícola.</p>
+                <img src="/api/placeholder/400/200" alt="Manejo de suínos" style="width:100%;max-width:400px;">
+            </div>
+            <div class="service">
+                <h3>Análise de Solo e Pastagens</h3>
+                <p>Realizamos análises detalhadas do solo e das pastagens para otimizar a alimentação dos animais e garantir a sustentabilidade das áreas de pastejo. Nossos serviços incluem recomendações de correção e adubação do solo.</p>
+                <img src="/api/placeholder/400/200" alt="Análise de solo e pastagens" style="width:100%;max-width:400px;">
+            </div>
+        </section>
+
+        <section id="equipe">
+            <h2>Nossa Equipe</h2>
+            <div class="team-member">
+                <img src="/api/placeholder/150/150" alt="Foto de Beatriz Pereira da Silva">
+                <div class="member-info">
+                    <h3>Beatriz Pereira da Silva</h3>
+                    <p><strong>Engenheira Agrônoma</strong></p>
+                    <p>CREA/BA: 6521746203</p>
+                </div>
+            </div>
+            <div class="team-member">
+                <img src="/api/placeholder/150/150" alt="Foto de Rafael Santos Oliveira">
+                <div class="member-info">
+                    <h3>Rafael Santos Oliveira</h3>
+                    <p><strong>Médico Veterinário</strong></p>
+                    <p>CRMV/BA: 36945</p>
+                </div>
+            </div>
+            <div class="team-member">
+                <img src="/api/placeholder/150/150" alt="Foto de Diogo Sousa Almeida">
+                <div class="member-info">
+                    <h3>Diogo Sousa Almeida</h3>
+                    <p><strong>Zootecnista</strong></p>
+                    <p>CRMV/BA: 71538</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="sobre">
+            <h2>Sobre Nós</h2>
+            <p>A Agroeste Consultoria Agronômica é uma empresa especializada em fornecer soluções inovadoras e sustentáveis para o setor agropecuário. Com uma equipe de profissionais altamente qualificados, oferecemos serviços de consultoria que abrangem desde o manejo de diferentes espécies animais até a análise e otimização de solos e pastagens.</p>
+            <p>Nossa missão é contribuir para o desenvolvimento e a eficiência do agronegócio, promovendo práticas que respeitem o meio ambiente e garantam a rentabilidade dos nossos clientes.</p>
+        </section>
+
+        <section id="contato">
+            <h2>Entre em Contato</h2>
+            <p>Estamos prontos para atender às suas necessidades e responder a todas as suas dúvidas.</p>
+            <p>Email: contato@agroeste.com</p>
+            <p>Telefone: (XX) XXXX-XXXX</p>
+            <p>Endereço: Rua das Palmeiras, 123 - Centro, Cidade - Estado, CEP: 12345-678</p>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Agroeste Consultoria Agronômica. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
